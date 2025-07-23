@@ -1,10 +1,9 @@
-// index.js
 const express = require("express");
 const puppeteer = require("puppeteer");
 const cors = require("cors");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 
@@ -16,9 +15,10 @@ app.get("/api/playstore", async (req, res) => {
 
   try {
     const browser = await puppeteer.launch({
-      headless: "new",
-      args: ["--no-sandbox", "--disable-setuid-sandbox"]
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
+
     const page = await browser.newPage();
     await page.goto(url, { waitUntil: "networkidle2" });
 
