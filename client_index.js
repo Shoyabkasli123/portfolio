@@ -28,7 +28,11 @@ const descriptions = [
 async function fetchAppDetails(url) {
   try {
 
-    const res = await fetch(`https://shoyab-portfolio.onrender.com/api/playstore?url=${encodeURIComponent(url)}`);
+const res = await fetch(`http://localhost:3000/api/playstore?url=${encodeURIComponent(url)}`);
+
+
+
+
 
     const data = await res.json();
 
