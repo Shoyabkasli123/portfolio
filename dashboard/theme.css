@@ -1,0 +1,23 @@
+:root {
+  /* Base Colors */
+  --main-bg-color: #0D0D11;             /* Deeper dark with a slight tint */
+  --main-text-color: #F9FAFB;           /* Off-white for less eye strain */
+
+  /* Accent Colors */
+  --accent-color: #7A5FFF;              /* Soft neon violet (modern, bold) */
+  --hover-accent: #A074FF;              /* Lighter for hover contrast */
+
+  /* Secondary Accent (optional for buttons, tags, highlights) */
+  --secondary-accent: #00E0FF;          /* Electric blue */
+
+  /* Card & UI Elements */
+  --card-bg: #1A1B24;                   /* Deep slate gray */
+  --card-border: rgba(122, 95, 255, 0.3); /* Match accent with depth */
+  --card-shadow: rgba(122, 95, 255, 0.1); /* Subtle purple glow */
+  --card-shadow-hover: rgba(122, 95, 255, 0.3); /* Enhanced hover effect */
+
+  /* Special Elements */
+  --success-color: #22C55E;             /* Green for positive states */
+  --danger-color: #EF4444;              /* Red for warnings/errors */
+  --info-color: #3B82F6;                /* Blue info state */
+}

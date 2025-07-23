@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoyab Khan | Flutter Developer</title>
+    <link rel="stylesheet" href="theme.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+              height: 100vh;
+              flex-direction: column;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--main-bg-color);
+      color: var(--main-text-color);
+        }
+
+        .top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .top-right button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: large;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .top-right button:hover {
+            color:  var(--accent-color);
+        }
+
+        .main-content {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 5%;
+            min-height: 60vh;
+            flex-wrap: wrap;
+        }
+
+        .text-content {
+            max-width: 60%;
+            flex: 1 1 300px;
+            padding-right: 20px;
+        }
+
+        .heading {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .heading .highlight {
+            color: var(--accent-color);
+        }
+
+        .paragraph {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        .profile-image {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 25px;
+            margin-left: 40px;
+            margin-bottom: 40px;
+        }
+
+        .right-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            flex: 1 1 200px;
+            margin-top: 20px;
+        }
+
+        footer.footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            background-color: #000;
+            color: white;
+            border-top: 1px solid #111;
+        }
+
+        .footer-top-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .footer-name {
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .small-image {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .social-icons-footer {
+             /* margin-top: 10%; */
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons-footer a {
+            color: white;
+            font-size: 1.4rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons-footer a:hover {
+            color: var(--accent-color);
+        }
+
+        /* ✅ Responsive Design for smaller screens */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .text-content {
+                max-width: 100%;
+                padding-right: 0;
+            }
+
+            .profile-image {
+                margin-left: 0;
+                margin-top: 20px;
+                margin-bottom: 50px;
+            }
+
+            .top-right {
+                position: static;
+                justify-content: center;
+                margin-top: 20px;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+
+            .top-right button {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top-right nav buttons -->
+    <div class="top-right">
+        <button onclick="window.location.href='index.html'">Home</button>
+        <!-- <button>Skills</button> -->
+        <button>Projects</button>
+        <button onclick="window.location.href='Experience.html'">Experience</button>
+        <button>Contact</button>
+    </div>
+
+    <!-- Main content area -->
+    <div class="main-content">
+        <div class="text-content">
+            <div class="heading">
+                Trust me I'm <span class="highlight">Software engineer.</span>
+            </div>
+            <div class="paragraph">
+                I’m Shoyab Khan, and I’ve always been passionate about technology and building high-performance mobile
+                apps. From small personal projects to team-driven applications, I thrive on writing clean, scalable code
+                using Flutter and Dart.
+                <br><br>
+                My goal is to turn ideas into interactive digital experiences that help solve real-world problems while
+                looking great and performing smoothly.
+                <br><br>
+                A passionate Flutter developer with a strong interest in creating seamless mobile experiences.
+                Recently, I’ve also begun exploring the world of web development, focusing on HTML, CSS, and
+                JavaScript. This journey allows me to build beautiful, responsive websites alongside powerful mobile
+                apps. I'm always eager to learn new technologies and push my boundaries to deliver high-quality,
+                user-friendly digital products.
+                <br><br>
+                I am currently pursuing my B.Tech in Computer Science from Bikaner Technical University. Alongside
+                my academic journey, I’ve made continuous learning and growth a daily habit—constantly refining my
+                skills and staying updated with modern development trends and tools.
+            </div>
+        </div>
+        <div class="right-section">
+            <img src="profile.jpeg" alt="Shoyab Khan" class="profile-image" />
+           <!-- <div style="height: 0px;"></div> -->
+            <div class="social-icons-footer">
+            <a href="https://github.com/your-username" target="_blank">
+                <img src="github.png" alt="Github" width="30" height="30">
+            </a>
+            <a href="https://www.linkedin.com/in/shoyab-khan-a006a522b" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn" width="24" height="24" />
+            </a>
+            <a href="mailto:Shoyabkhan13012001@gmail.com">📧</a>
+            <a href="https://yourportfolio.com" target="_blank">🌐</a>
+        </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
